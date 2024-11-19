@@ -1,0 +1,5 @@
+- name: Delete microservices from Kubernetes
+  ansible.builtin.command:
+    cmd: >
+      kubectl delete -f {{item.manifest_path}} -n {{k8s_namespace}}
+  with_items: "{{microservices}}"
