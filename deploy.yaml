@@ -1,0 +1,8 @@
+---
+- name: Deploy Kubernetes Microservices
+  hosts: all
+  roles:
+    - role: service-a
+      tasks_from: deploy.yaml
+    - role: service-b
+      tasks_from: deploy.yaml
