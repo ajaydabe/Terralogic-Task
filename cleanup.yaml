@@ -1,0 +1,8 @@
+---
+- name: Cleanup Kubernetes Microservices
+  hosts: all
+  roles:
+    - role: service-a
+      tasks_from: cleanup.yaml
+    - role: service-b
+      tasks_from: cleanup.yaml
