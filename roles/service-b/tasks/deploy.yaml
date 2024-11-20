@@ -1,0 +1,5 @@
+- name: Deploy microservices to Kubernetes
+  ansible.builtin.command:
+    cmd: >
+      kubectl apply -f {{item.manifest_path}} -n {{k8s_namespace}}
+  with_items: "{{microservices}}"
