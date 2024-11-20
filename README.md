@@ -2,30 +2,7 @@
 Automating deploying and cleaning up Kubernetes microservices using Ansible Playbooks.
 
 ## Structure of files and roles in tree formate
-etc/
-|__ansible/
-    |__ansible.cfg
-    |__cleanup.yaml
-    |__deploy.yaml
-    |__group_vars/
-        |__all.yaml
-    |__inventory
-    |__hosts
-    |__roles/
-        |__service-a/
-          |__files/
-              |__deployment.yaml
-              |__service.yaml
-          |__tasks/
-              |__deploy.yaml
-              |__cleanup.yaml
-        |__service-b/
-            |__files/
-                |__deployment.yaml
-                |__service.yaml
-            |__tasks/
-                |__deploy.yaml
-                |__cleanup.yaml
+![image](https://github.com/user-attachments/assets/ade7d25b-c335-4672-8db9-bfc8f28dcb46)
 
 ### Showing result after running playbook for deploying
 ![image](https://github.com/user-attachments/assets/1fe96322-cf0e-48b6-b5cb-edee507d5cd7)
