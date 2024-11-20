@@ -1,5 +1,0 @@
-- name: Cleanup Kubernetes Microservices
-  hosts: all
-  roles:
-    - role: k8s
-      tasks_from: cleanup.yaml
